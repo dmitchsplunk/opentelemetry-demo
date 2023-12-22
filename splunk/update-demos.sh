@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
+# Copyright The OpenTelemetry Authors
+# SPDX-License-Identifier: Apache-2.0
+
 set -euo pipefail
 # Purpose: Update demo applications with the latest upstream changes.
 # Notes:
@@ -23,9 +26,12 @@ function update_root_readme {
 
     # add a section to the root README file with a pointer to Splunk customizations
     SEARCH_VAL="## Quick start"
-    REPLACE_VAL='## Splunk customizations \
+    REPLACE_VAL='## Splunk customizations\
 \
-A number of customizations have been made to use the demo application with Splunk Observability Cloud, which can be found in the \[\/splunk\](\.\/splunk) folder.  See \[this document\](\.\/splunk\/README.md) for details. \
+A number of customizations have been made to use the demo application with\
+Splunk Observability Cloud, which can be found in the\
+\[\/splunk\](\.\/splunk) folder.  See \[this document\](\.\/splunk\/README.md)\
+for details.\
 \
 ## Quick start'
 

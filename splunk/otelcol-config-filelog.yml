@@ -1,3 +1,6 @@
+# Copyright The OpenTelemetry Authors
+# SPDX-License-Identifier: Apache-2.0
+
 extensions:
   health_check:
     endpoint: 0.0.0.0:13133
@@ -102,7 +105,7 @@ receivers:
   signalfx:
     endpoint: 0.0.0.0:9943
   # This section is used to collect OpenTelemetry metrics
-  # Even if just a SignalFx µAPM customer, these metrics are included
+  # Even if just a SignalFx APM customer, these metrics are included
   prometheus:
     config:
       scrape_configs:
